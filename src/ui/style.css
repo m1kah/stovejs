@@ -1,0 +1,144 @@
+html, body {
+  height: 100%;
+}
+
+.border {
+  width: 620px;
+  height: 610px;
+  margin: 0 auto;
+  top: 50%;
+  margin-top: -310px;
+  position: relative;
+  background: linear-gradient(to right, rgba(224,224,224,1) 0%, rgba(246,246,246,1) 25%, rgba(224,224,224,1) 100%);
+  border-radius: 4px;
+  padding-top: 10px;
+}
+
+.stove-outer {
+  background: linear-gradient(to bottom, rgba(30,30,30,1) 0%, rgba(0,0,0,1) 82%, rgba(0,0,0,1) 100%);
+  width: 600px;
+  height: 600px;
+  position: relative;
+  border: 1px solid #f6f6f6;
+  margin-left: 10px;
+}
+
+.stove-inner {
+  width: 590px;
+  height: 590px;
+  margin: 0 auto;
+  top: 50%;
+  margin-top: -295px;
+  position: relative;
+  border: 1px solid #f6f6f6;
+  position: relative;
+}
+
+.cooker-tl {
+  border-radius: 50%;
+  border: 1px solid #f6f6f6;
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.cooker-tr {
+  border-radius: 50%;
+  border: 1px solid #f6f6f6;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 40px;
+  right: 60px;
+}
+
+.cooker-bl {
+  border-radius: 50%;
+  border: 1px solid #f6f6f6;
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+}
+
+.cooker-br {
+  border-radius: 50%;
+  border: 1px solid #f6f6f6;
+  width: 260px;
+  height: 260px;
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+
+.buttons .group {
+  width: 80px;
+  height: 60px;
+  display: inline-block;
+  position: relative;
+}
+
+.cooker-symbols {
+  height: 30px;
+  margin-left: 17px;
+  width: 8px;
+  margin-top: 2px;
+}
+
+.cooker-symbols div {
+  border: 1px solid #f6f6f6;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+}
+
+.cooker-symbols div + div {
+  margin-top: 2px;
+}
+
+.cooker-symbols div.active {
+  background-color: #f6f6f6;
+}
+
+@font-face {
+  font-family: Digital;
+  src: url('digital.ttf');
+}
+
+.power {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: red;
+  font-size: 24pt;
+  font-family: Digital;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+}
+
+.controls a,
+.controls a:hover {
+  color: #f6f6f6;
+  text-decoration: none;
+  font-size: 28pt;
+  font-weight: 100;
+}
+
+.controls a + a {
+  margin-left: 8px;
+}

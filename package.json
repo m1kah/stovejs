@@ -1,0 +1,31 @@
+{
+  "name": "dapsec-stove",
+  "version": "1.0.0",
+  "description": "Example of daspec specification implementing inducation stove",
+  "main": "index.js",
+  "scripts": {
+    "test": "daspec --config src/test/daspec.json"
+  },
+  "keywords": [
+    "daspec"
+  ],
+  "author": "mika.hamalainen@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "daspec": "^1.1.0",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^4.0.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^3.3.0",
+    "phantom": "^0.8.0",
+    "time-grunt": "^1.2.1"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  }
+}
