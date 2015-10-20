@@ -1,4 +1,4 @@
 build/
 daspec-output/
 node_modules/
-
+*.log
