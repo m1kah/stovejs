@@ -2,9 +2,10 @@
   "name": "dapsec-stove",
   "version": "1.0.0",
   "description": "Example of daspec specification implementing inducation stove",
-  "main": "index.js",
+  "main": "stovejs",
   "scripts": {
-    "test": "daspec --config src/test/daspec.json"
+    "start": "src/server/server.js",
+    "test": "jest"
   },
   "keywords": [
     "daspec"
@@ -12,6 +13,7 @@
   "author": "mika.hamalainen@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "babel-jest": "^5.3.0",
     "babelify": "^6.3.0",
     "daspec": "^1.1.0",
     "grunt": "^0.4.5",
@@ -19,13 +21,21 @@
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-copy": "^0.8.1",
     "grunt-contrib-watch": "^0.6.1",
+    "jest-cli": "^0.5.10",
     "load-grunt-tasks": "^3.3.0",
     "phantom": "^0.8.0",
+    "react-addons-test-utils": "^0.14.0",
     "time-grunt": "^1.2.1"
   },
   "dependencies": {
     "express": "^4.13.3",
     "react": "^0.14.0",
     "react-dom": "^0.14.0"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
   }
 }
